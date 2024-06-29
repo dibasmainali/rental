@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - Luxury Car Rental Nepal</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+      }
+      .container {
+        width: 80%;
+        margin: auto;
+        overflow: hidden;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+
+      .main-content {
+        flex: 2;
+        padding: 20px;
+        background: #fff;
+        margin-bottom: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: box-shadow 0.3s ease;
+      }
+
+      .main-content:hover {
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      }
+
+      .main-content h1 {
+        color: #333;
+      }
+
+      .main-content p {
+        color: #666;
+      }
+
+      .profiles {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        margin: 20px 0;
+        justify-content: space-between;
+      }
+
+      .profile {
+        flex: 1;
+        padding: 10px;
+        background: #f9f9f9;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        min-width: 250px;
+      }
+
+      .profile:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      }
+
+      .profile h3 {
+        margin-bottom: 10px;
+      }
+
+      .profile p {
+        margin-bottom: 0;
+      }
+
+      .why-choose-us {
+        flex: 1;
+        padding: 20px;
+        background: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: box-shadow 0.3s ease;
+        margin-bottom: 20px;
+      }
+
+      .why-choose-us:hover {
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      }
+
+      .why-choose-us h2 {
+        margin-bottom: 10px;
+      }
+
+      .why-choose-us ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      .why-choose-us li {
+        margin-bottom: 10px;
+      }
+
+      .faq {
+        flex: 1;
+        padding: 20px;
+        background: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: box-shadow 0.3s ease;
+        margin-bottom: 20px;
+      }
+
+      .faq:hover {
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      }
+
+      .faq h2 {
+        margin-bottom: 10px;
+      }
+
+      .faq-item {
+        background: #fff;
+        border: 1px solid #ddd;
+        padding: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .faq-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      }
+
+      .faq-item i {
+        color: #0779e4;
+        transition: color 0.3s ease;
+      }
+
+      .faq-item:hover i {
+        color: #333;
+      }
+
+      .faq dt {
+        font-weight: bold;
+        margin-top: 10px;
+      }
+
+      .faq dd {
+        margin-left: 0;
+        margin-bottom: 10px;
+      }
+
+      .logo {
+        display: flex;
+        align-items: center;
+      }
+
+      .logo h1 {
+        margin-left: 10px;
+        font-size: 1.5em;
+      }
+
+      .name {
+        display: flex;
+        align-items: center;
+      }
+
+      .name i {
+        margin-right: 5px;
+        font-size: 1.2em;
+      }
+
+      @media (max-width: 768px) {
+        .main-content,
+        .why-choose-us,
+        .faq,
+        .profile {
+          flex: 1 1 100%;
+          margin-bottom: 20px;
+        }
+
+        .profiles {
+          flex-direction: column;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .faq-item {
+          min-width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="logo">
+        <img src="/image/image.png" alt="logo" width="70px" height="50px" />
+        <h1>Luxury Car</h1>
+      </div>
+      <div class="item">
+        <a class="home-btn" href="index.html">Home</a>
+        <a href="rent.html">Rent Car</a>
+        <a href="about.html">About Us</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+      <div class="name">
+        <i class="fa-solid fa-user"></i>
+        <p>Dibas</p>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="main-content">
+        <h1>About Us</h1>
+        <p>
+          Welcome to Luxury Car Rental Nepal, your premier destination for
+          luxury vehicle rentals in Nepal. Founded with a vision to redefine
+          travel experiences, we pride ourselves on offering a curated selection
+          of high-end vehicles that cater to both comfort and style.
+        </p>
+        <br /><br />
+        <h2>Our Mission</h2>
+        <p>
+          At Luxury Car Rental Nepal, our mission is to provide our clients with
+          an exceptional level of service and the finest selection of luxury
+          vehicles. We believe that every journey should be an experience in
+          itself, whether it's for business, leisure, or special occasions.
+        </p>
+        <br /><br />
+        <h2>Our Fleet</h2>
+        <p>
+          We offer a diverse range of luxury vehicles, including sleek sedans,
+          spacious SUVs, and sporty convertibles. Each vehicle is meticulously
+          maintained and equipped with modern amenities to ensure a seamless and
+          enjoyable ride.
+        </p>
+        <br /><br />
+        <h2>Experience Luxury</h2>
+        <p>
+          Whether you're exploring the stunning landscapes of Nepal or attending
+          an important event, we invite you to experience the ultimate in luxury
+          travel with us. Thank you for considering Luxury Car Rental Nepal for
+          your transportation needs. We look forward to serving you.
+        </p>
+      </div>
+      <div class="faq">
+        <h2>Frequently Asked Questions (FAQs)</h2>
+        <div class="faq-item">
+          <i class="fas fa-user"></i>
+          <dl>
+            <dt>What types of cars do you offer?</dt>
+            <dd>
+              We offer a wide range of luxury vehicles, including sedans, SUVs,
+              and sports cars.
+            </dd>
+          </dl>
+        </div>
+        <div class="faq-item">
+          <i class="fas fa-user"></i>
+          <dl>
+            <dt>How can I make a reservation?</dt>
+            <dd>
+              You can make a reservation online through our website or by
+              contacting our customer service team.
+            </dd>
+          </dl>
+        </div>
+        <div class="faq-item">
+          <i class="fas fa-user"></i>
+          <dl>
+            <dt>What are the rental requirements?</dt>
+            <dd>
+              Drivers must be at least 25 years old and have a valid driver's
+              license. Additional requirements may apply depending on the
+              vehicle.
+            </dd>
+          </dl>
+        </div>
+        <div class="faq-item">
+          <i class="fas fa-user"></i>
+          <dl>
+            <dt>Do you offer delivery and pick-up services?</dt>
+            <dd>
+              Yes, we offer convenient delivery and pick-up services to ensure
+              your rental experience is hassle-free.
+            </dd>
+          </dl>
+        </div>
+        <div class="faq-item">
+          <i class="fas fa-user"></i>
+          <dl>
+            <dt>Can I extend my rental period?</dt>
+            <dd>
+              Yes, you can extend your rental period by contacting our customer
+              service team before your current rental period ends.
+            </dd>
+          </dl>
+        </div>
+      </div>
+      <div class="profiles">
+        <div class="profile">
+          <h3>Founder: Dibas Mainali</h3>
+          <p>
+            As the founder of Luxury Car Rental Nepal, I am passionate about
+            providing an unparalleled travel experience. My goal is to ensure
+            that every client enjoys the luxury and comfort of our vehicles
+            while exploring the beautiful landscapes of Nepal.
+          </p>
+        </div>
+        <div class="profile">
+          <h3>Co-Founder: [Co-Founder's Name]</h3>
+          <p>
+            As a co-founder, I believe in the power of exceptional service and
+            attention to detail. Our team is dedicated to making your rental
+            experience seamless and enjoyable, from the moment you book until
+            the end of your journey.
+          </p>
+        </div>
+        <div class="profile">
+          <h3>CEO: [CEO's Name]</h3>
+          <p>
+            As the CEO, I am committed to leading our team with integrity and a
+            focus on customer satisfaction. Our goal is to not only meet but
+            exceed your expectations, ensuring that Luxury Car Rental Nepal
+            remains your top choice for luxury travel.
+          </p>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="content">
+        <div class="top">
+          <div class="logo-details">
+            <img src="/image/image.png" alt="logo" width="50px" height="30px" />
+            <span class="logo_name">Luxury Car</span>
+          </div>
+          <div class="media-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="link-boxes">
+          <ul class="box">
+            <li class="link_name">Company</li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Get started</a></li>
+          </ul>
+          <ul class="box">
+            <li class="link_name">Services</li>
+            <li><a href="#">luxury car</a></li>
+            <li><a href="#">free driver</a></li>
+            <li><a href="#">pickup facilities</a></li>
+            <li><a href="#">life insurance</a></li>
+          </ul>
+          <ul class="box">
+            <li class="link_name">Account</li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">My account</a></li>
+            <li><a href="#">Prefrences</a></li>
+            <li><a href="#">Purchase</a></li>
+          </ul>
+          <ul class="box">
+            <a href="rent.html">
+              <li class="link_name">gallery</li>
+              <img
+                src="https://hips.hearstapps.com/hmg-prod/amv-prod-cad-assets/wp-content/uploads/2016/08/fourcylinder.jpg"
+                alt="gallery photo"
+                width="220px"
+                height="140px"
+            /></a>
+          </ul>
+          <ul class="box input-box">
+            <li class="link_name">Subscribe</li>
+            <li><input type="text" placeholder="Enter your email" /></li>
+            <li><input type="button" value="Subscribe" /></li>
+          </ul>
+        </div>
+      </div>
+      <div class="bottom-details">
+        <div class="bottom_text">
+          <span class="copyright_text"
+            >Copyright © 2024 <a href="#">Luxury Car </a>All rights
+            reserved</span
+          >
+          <span class="policy_terms">
+            <a href="#">Privacy policy</a>
+            <a href="#">Terms & condition</a>
+          </span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

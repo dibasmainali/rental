@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Car Rental Service</title>
+  <link rel="stylesheet" href="style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <style>
+    .name{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .search-bar {
+      padding: 1em;
+      background-color: #f7f7f7;
+      border-bottom: 1px solid #ddd;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .search-bar input[type="search"] {
+      width: 70%;
+      padding: 0.5em;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 20px;
+      transition: transform 0.3s ease;
+    }
+
+   
+
+    .search-bar #search-btn {
+      background-color: #333;
+      color: #fff;
+      padding: 0.5em 1em;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 20px;
+      border: none;
+      margin-left: 0.5em;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .search-bar #search-btn:hover {
+      background-color: #444;
+      transform: scale(1.05);
+    }
+
+    .search-bar #search-btn:active {
+      transform: scale(0.95);
+    }
+
+    .car-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+      gap: 1em;
+      padding: 2em;
+    }
+
+    .car {
+      position: relative;
+      cursor: pointer;
+    }
+
+    .car img {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+
+    .overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.7);
+      color: #fff;
+      text-align: center;
+      padding: 1em;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .car:hover .overlay {
+      opacity: 1;
+    }
+
+    .car-grid .car {
+      grid-column: span 1;
+    }
+
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <div class="logo">
+      <img src="/image/image.png" alt="logo" width="70px" height="50px" />
+      <h1>luxury car</h1>
+    </div>
+
+    <div class="item">
+      <a class="home-btn" href="index.html">Home</a>
+      <a href="rent.html">Rent Car</a>
+      <a href="about.html">About Us</a>
+      <a href="#">Blog</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+    <div class="name">
+    <i class="fa-solid fa-user"></i>
+    <p>dibas</p>
+  </div>
+  </nav>
+  <div class="search-bar">
+    <input
+      type="search"
+      id="search-input"
+      placeholder="Search car brand..."
+    />
+    <button id="search-btn"><i class="fa-solid fa-search"></i></button>
+  </div>
+  <main>
+    <div class="car-grid" id="car-grid">
+      <div class="car" id="lambo" data-brand="lamborghini" onclick="location.href='/rent/lambo.html'">
+        <img
+          src="https://stimg.cardekho.com/images/carexteriorimages/930x620/Lamborghini/Huracan-EVO/10643/1690010999692/front-left-side-47.jpg"
+          alt="Lamborghini"
+          width="200px"
+          height="200px"
+        />
+        <div class="overlay">Lamborghini Model</div>
+      </div>
+      <div class="car" data-brand="bmw" onclick="location.href='/rent/bmw.html'">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX40plR-_IlAVOMDBtxfug6SV1_keHSqbuvA&s"
+          alt="BMW"
+          width="200px"
+          height="200px"
+        />
+        <div class="overlay">BMW Model</div>
+      </div>
+      <div class="car" data-brand="audi" onclick="location.href='/rent/audi.html'">
+        <img
+          src="https://hips.hearstapps.com/hmg-prod/images/2025-audi-rs6-avant-gt-motion-103-65bbc522aae10.jpg?crop=0.488xw:0.366xh;0.158xw,0.395xh&resize=640:*"
+          alt="Audi"
+          width="200px"
+          height="200px"
+        />
+        <div class="overlay">Audi Model</div>
+      </div>
+      <div class="car" data-brand="toyota supra" onclick="location.href='/rent/supra.html'">
+        <img
+          src="https://cdn.motor1.com/images/mgl/VzXbYR/s3/2023-toyota-gr-supra-gt4-evo.jpg"
+          alt="Toyota Supra"
+          width="200px"
+          height="200px"
+        />
+        <div class="overlay">Toyota Supra Model</div>
+      </div>
+      <div class="car" data-brand="rolls-royce" onclick="location.href='/rent/rolls-royce.html'">
+        <img
+          src="https://robbreport.com/wp-content/uploads/2021/03/1-5.jpg?w=1000"
+          alt="Rolls-Royce"
+          width="200px"
+          height="200px"
+        />
+        <div class="overlay">Rolls-Royce Model</div>
+      </div>
+    </div>
+  </main>
+  <script>
+    const searchInput = document.getElementById("search-input");
+    const searchBtn = document.getElementById("search-btn");
+    const carGrid = document.getElementById("car-grid");
+    const cars = carGrid.getElementsByClassName("car");
+
+    function searchCars() {
+      const searchTerm = searchInput.value.trim().toLowerCase();
+
+      Array.from(cars).forEach((car) => {
+        const carBrand = car.dataset.brand.toLowerCase();
+        if (carBrand.includes(searchTerm)) {
+          car.classList.remove("hidden");
+        } else {
+          car.classList.add("hidden");
+        }
+      });
+    }
+
+    searchBtn.addEventListener("click", (e) => {
+      e.preventDefault();
+      searchCars();
+    });
+
+    searchInput.addEventListener("keypress", (e) => {
+      if (e.key === "Enter") {
+        e.preventDefault();
+        searchCars();
+      }
+    });
+  </script>
+</body>
+</html>
